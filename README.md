@@ -17,3 +17,4 @@ Den använder sig av ett api med Azure Functions, det började med Express serve
 2. npm run serve
 
 
+![Imgur Image](https://imgur.com/iwDEebv.png)
