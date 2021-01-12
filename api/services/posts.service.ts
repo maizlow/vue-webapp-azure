@@ -2,6 +2,7 @@ import { Context } from "@azure/functions";
 import mongodb = require("mongodb");
 require("dotenv").config();
 
+
 // Get posts
 async function getPosts({ req, res }: Context) {
   try {
@@ -41,7 +42,7 @@ async function deletePost({ req, res }: Context) {
 async function loadPostsCollection() {
   try {
     const client = await mongodb.MongoClient.connect(
-      process.env.DB_CONNECTION_STRING,
+      process.env.DATABASE_CONNECTION_STRING,
       {
         useNewUrlParser: true,
       }
